@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="generator" content="Hugo 0.66.0" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link href="https://fonts.googleapis.com/css?family=Roboto:300,400,700" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/styles/github.min.css">
+<link rel="stylesheet" href="../css/normalize.css">
+<link rel="stylesheet" href="../css/skeleton.css">
+<link rel="stylesheet" href="../css/custom.css">
+<link rel="alternate" href="index.xml" type="application/rss+xml" title="DSP136">
+<link rel="shortcut icon" href="favicon.png" type="image/x-icon" />
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async
+      src="https://cdn.jsdelivr.net/npm/mathjax@3.0.1/es5/tex-mml-chtml.js">
+</script>
+<title>Name of paper...</title>
+</head>
+<body>
+
+<div class="container">
+
+	<header role="banner">
+		
+			
+		
+		
+	</header>
+
+
+	<main role="main">
+		<article itemscope itemtype="https://schema.org/BlogPosting">
+            <h1 class="entry-title" itemprop="headline">Audio samples for paper: FeatheryTTS</h1>
+			
+			<section itemprop="entry-text">
+				<br>
+<!-- Paper: <a href="../papers/fastspeech_2019.pdf">FastSpeech: Fast, Robust and Controllable Text to Speech</a> -->
+<!-- <p>ArXiv: <a href="https://arxiv.org/abs/1905.09263">arXiv:1905.09263</a></p> -->
+<!-- <p>Reddit Discussions: <a href="https://www.reddit.com/r/MachineLearning/comments/brzwi5/r_fastspeech_fast_robust_and_controllable_text_to/">Click me</a></p> -->
+<!-- <h2 id="authors">Authors</h2>
+<ul>
+<li>Yi Ren* (Zhejiang University) <a href="mailto:rayeren@zju.edu.cn">rayeren@zju.edu.cn</a></li>
+<li>Yangjun Ruan* (Zhejiang University) <a href="mailto:ruanyj3107@zju.edu.cn">ruanyj3107@zju.edu.cn</a></li>
+<li>Xu Tan (Microsoft Research) <a href="mailto:xuta@microsoft.com">xuta@microsoft.com</a></li>
+<li>Tao Qin (Microsoft Research) <a href="mailto:taoqin@microsoft.com">taoqin@microsoft.com</a></li>
+<li>Sheng Zhao (Microsoft STC Asia) <a href="mailto:Sheng.Zhao@microsoft.com">Sheng.Zhao@microsoft.com</a></li>
+<li>Zhou Zhao (Zhejiang University) <a href="mailto:zhaozhou@zju.edu.cn">zhaozhou@zju.edu.cn</a></li>
+<li>Tie-Yan Liu (Microsoft Research) <a href="mailto:tyliu@microsoft.com">tyliu@microsoft.com</a></li>
+</ul> -->
+<!-- <p><small>* Equal contribution.</small></p> -->
+<!-- <h2 id="abstract">Abstract</h2>
+<p>Neural network based end-to-end text to speech (TTS) has significantly improved the quality of synthesized speech. Prominent methods (e.g., Tacotron 2) usually first generate mel-spectrogram from text, and then synthesize speech from mel-spectrogram using vocoder such as WaveNet. Compared with traditional concatenative and statistical parametric approaches, neural network based end-to-end models suffer from slow inference speed, and the synthesized speech is usually not robust (i.e., some words are skipped or repeated) and lack of controllability (voice speed or prosody control). In this work, we propose a novel feed-forward network based on Transformer to generate mel-spectrogram in parallel for TTS. Specifically, we extract attention alignments from an encoder-decoder based teacher model for phoneme duration prediction, which is used by a length regulator to expand the source phoneme sequence to match the length of target mel-spectrogram sequence for parallel mel-spectrogram generation. Experiments on the LJSpeech dataset show that our parallel model matches autoregressive models in terms of speech quality, nearly eliminates the problem of word skipping and repeating in particularly hard cases, and can adjust voice speed smoothly. Most importantly, compared with autoregressive Transformer TTS, our model speeds up the mel-spectrogram generation by 270x and the end-to-end speech synthesis by 38x. Therefore, we call our model FastSpeech.</p> -->
+<h2 id="audio-samples">Audio Samples</h2>
+<!-- <p>All of the audio samples use WaveGlow as vocoder.</p> -->
+<!-- <h3 id="audio-quality">Audio Quality</h3> -->
+<!-- <p><em>I will quote an extract from the reverend gentleman&rsquo;s own journal.</em></p> -->
+<p><em>She thought that he might not have become involved in the assassination if people had been kinder to him.</em></p>
+<table><thead>
+<tr>
+<th style="text-align: center">Proposed model</th>
+<th style="text-align: center">FastSpeech 2 + Hifi-GAN</th>
+<th style="text-align: center">Tacotron 2 + Hifi-GAN</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="../audios/proposed/01455000_samp15_ref_LJ001-0009.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audios/fs2/samp_15.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audios/tacotron/samp_15.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+<p><em>She had struggled with severe depression when she was a teenager.</em></p>
+<table><thead>
+<tr>
+<th style="text-align: center">Proposed model</th>
+<th style="text-align: center">FastSpeech 2 + Hifi-GAN</th>
+<th style="text-align: center">Tacotron 2 + Hifi-GAN</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="../audios/proposed/01455000_samp18_ref_LJ001-0009.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audios/fs2/samp_18.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audios/tacotron/samp_18.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+<p><em>However, it will be many weeks before vaccinations make a dent in the pandemic.</em></p>
+<table><thead>
+<tr>
+<th style="text-align: center">Proposed model</th>
+<th style="text-align: center">FastSpeech 2 + Hifi-GAN</th>
+<th style="text-align: center">Tacotron 2 + Hifi-GAN</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="../audios/proposed/01455000_samp22_ref_LJ001-0009.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audios/fs2/samp_22.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audios/tacotron/samp_22.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+
+<p><em>The book is devoted exclusively to exploring, documenting and showcasing the African impact on American history.</em></p>
+<table><thead>
+<tr>
+<th style="text-align: center">Proposed model</th>
+<th style="text-align: center">FastSpeech 2 + Hifi-GAN</th>
+<th style="text-align: center">Tacotron 2 + Hifi-GAN</th>
+</tr></thead><tbody>
+<tr>
+<td style="text-align: center"><audio controls="controls" ><source src="../audios/proposed/01455000_samp11_ref_LJ001-0009.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audios/fs2/samp_11.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+<td style="text-align: center"><audio controls="controls" ><source src="../audios/tacotron/samp_11.wav" autoplay/>Your browser does not support the audio element.</audio></td>
+</tr>
+</tbody></table>
+
+
+<!-- <p>Compared with autoregressive Transformer TTS, our model speeds up the mel-spectrogram generation by 270x and the end-to-end speech synthesis by 38x.</p> -->
+<!-- <table><thead>
+<tr>
+<th style="text-align: center">Inference Time vs. Mel Length (FastSpeech)</th> -->
+<!-- <th style="text-align: center">Inference Time vs. Mel Length (Transformer TTS)</th> -->
+<!-- </tr></thead><tbody>
+<tr>
+<td style="text-align: center">
+<img src="../images/plot.png" width="60%"/>
+</td> -->
+<!-- <td style="text-align: center">
+<img src="../images/fastspeech/infer_time_plot2.png" width="100%"/>
+</td> -->
+<!-- </tr>
+</tbody></table> -->
+<!-- <p>We also visualize the relationship between the inference latency and the length of the predicted mel-spectrogram sequence in the test set. It can be found from Figure that the inference latency barely increases with the length of the predicted mel-spectrogram for FastSpeech, while increases largely in Transformer TTS. This indicates that the inference speed of our method is not sensitive to the length of generated audio due to parallel generation.</p> -->
+<!-- ## Model Hyperparameters
+
+\ | Transformer TTS   |  Our Model
+--------|------|------
+ Hidden Size | 384 | 384
+ Conv1D Kernel | 3 | 3
+ Conv1D Filter Size | 384 | 384
+ \#Encoder/Phoneme-Side FFT Layer | 4 | 4 
+ \#Decoder/Mel-Side FFT Layers | 4 | 4
+ FFT Block Dropout | 0.1 | 0.1
+ Total Number  | 26.3M  |  24.2M 
+
+ -->
+<!-- <h2 id="our-related-works">Our Related Works</h2>
+<p><a href="/unsuper/">Almost Unsupervised Text to Speech and Automatic Speech Recognition</a><br>
+<a href="/seminas/">Semi-Supervised Neural Architecture Search</a><br>
+<a href="/multispeech/">MultiSpeech: Multi-Speaker Text to Speech with Transformer</a><br>
+<a href="/lrspeech/">LRSpeech: Extremely Low-Resource Speech Synthesis and Recognition</a><br>
+<a href="/deepsinger/">DeepSinger: Singing Voice Synthesis with Data Mined From the Web</a><br>
+<a href="/fastspeech2/">FastSpeech 2: Fast and High-Quality End-to-End Text-to-Speech</a><br>
+<a href="/uwspeech/">UWSpeech: Speech to Speech Translation for Unwritten Languages</a><br>
+<a href="/denoispeech/">Denoising Text to Speech with Frame-Level Noise Modeling</a><br></p> -->
+
+			</section>
+		</article>
+	</main>
+
+
+	
+
+</div>
+
+<!-- <script>
+	(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+	(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+	m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+	})(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+	ga('create', 'UA-139981676-1', 'auto');
+	ga('send', 'pageview');
+</script> -->
+
+<script src="//cdnjs.cloudflare.com/ajax/libs/highlight.js/8.4/highlight.min.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+
+
+
+<script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+         HTML: ["input/TeX","output/HTML-CSS"],
+         TeX: {
+                Macros: {
+                         bm: ["\\boldsymbol{#1}", 1],
+                         argmax: ["\\mathop{\\rm arg\\,max}\\limits"],
+                         argmin: ["\\mathop{\\rm arg\\,min}\\limits"]},
+                extensions: ["AMSmath.js","AMSsymbols.js"],
+                equationNumbers: { autoNumber: "AMS" } },
+         extensions: ["tex2jax.js"],
+         jax: ["input/TeX","output/HTML-CSS"],
+         tex2jax: { inlineMath: [ ['$','$'], ["\\(","\\)"] ],
+                    displayMath: [ ['$$','$$'], ["\\[","\\]"] ],
+                    processEscapes: true },
+         "HTML-CSS": { availableFonts: ["TeX"],
+                       linebreaks: { automatic: true } }
+     });
+ </script>
+
+ <script type="text/x-mathjax-config">
+     MathJax.Hub.Config({
+       tex2jax: {
+         skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+       }
+     });
+ </script>
+
+ <script type="text/javascript" async
+   src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.4/MathJax.js?config=TeX-MML-AM_CHTML">
+ </script>
+
+
+
+
+</body>
+</html>
