@@ -6,7 +6,7 @@ title: about
 
 ### Summary
 My name is Nguyen Huu Kim.<br>
-I am a little guy who is hungry for knowledge and curious about science, history, economy, .etc. <br>
+I am a guy who is hungry for knowledge and curious about science, history, economy, .etc. <br>
 Regarding my career, I am currently interested in applying machine learning, deep learning to solve speech, audio related problems especially speech synthesis for on-device applications.<br>
 
 
