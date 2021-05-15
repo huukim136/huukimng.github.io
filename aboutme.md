@@ -1,16 +1,31 @@
 ---
 layout: page
-title: About me
-subtitle: Why you'd want to go on a date with me
+title: about
+<!-- subtitle: Why you'd want to go on a date with me -->
 ---
 
-My name is Inigo Montoya. I have the following qualities:
+### Summary
+My name is Nguyen Huu Kim.<br>
+I am a little guy who is hungry for knowledge and curious about science, history, economy, .etc. <br>
+Regarding my career, I am currently interested in applying machine learning, deep learning to solve speech, audio related problems especially speech synthesis for on-device applications.<br>
 
-- I rock a great mustache
-- I'm extremely loyal to my family
 
-What else do you need?
+### Education
 
-### My story
+***
+#### M.S.
+<small>2019 - 2021</small> <br>
+DSP&AI Lab., EE, Yonsei University <br>
+Under the supervision of Prof. Hong-Goo Kang <br>
 
-To be honest, I'm having some trouble remembering right now, so why don't you just watch [my movie](https://en.wikipedia.org/wiki/The_Princess_Bride_%28film%29) and it will answer **all** your questions.
+#### B.S.
+<small>2013 - 2018</small> <br>
+HUST, Hanoi University of Science and Technology <br>
+
+***
+
+### Experience
+***
+#### NTQ Solution SJC.
+<small>Mar, 2019 - Aug, 2019</small> <br>
+AI Engineer<br>
